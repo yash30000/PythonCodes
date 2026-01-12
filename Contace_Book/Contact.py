@@ -5,8 +5,8 @@ while True:
     choice = int(input("Enter choice: "))
 
     if choice == 1:
-        name = input("Enter name: ")
-        phone = input("Enter phone number: ")
+        name = input("Enter name:- ")
+        phone = input("Enter phone number:- ")
         contacts[name] = phone
         print("Contact Saved!")
 
@@ -16,7 +16,7 @@ while True:
             print(name, ":", phone)
 
     elif choice == 3:
-        name = input("Search name: ")
+        name = input("Search name:- ")
         if name in contacts:
             print(name, ":", contacts[name])
         else:
